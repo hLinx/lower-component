@@ -56,17 +56,17 @@
   </lower-component>
 </template>
 <script>
-	export default {
-		data () {
-			return {
-				isLoading: false
-			}
-		}
-		created () {
-			this.$http.get('/list').then(() => {
-				this.isLoading = true
-			})
-		}
-	}	
+  export default {
+    data () {
+      return {
+        isLoading: false
+      }
+    }
+    created () {
+      this.$http.get('/list').then(() => {
+        this.isLoading = true
+      })
+    }
+  }	
 </script>
 ```
