@@ -28,7 +28,7 @@
 ```
 // stage.vue
 <template>
-  <lower-component level="custom" custom="getList">
+  <lower-component level="custom" :custom="getList">
     <your-component />
   </lower-component>
 </template>
@@ -51,7 +51,7 @@
 ```
 // stage.vue
 <template>
-  <lower-component level="custom" custom="isLoading">
+  <lower-component level="custom" :custom="isLoading">
     <your-component />
   </lower-component>
 </template>
