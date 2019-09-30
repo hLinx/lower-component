@@ -1,0 +1,16 @@
+{
+  "name": "lower-component",
+  "version": "1.0.0",
+  "description": "delayed rendering of your components",
+  "keywords": [
+    "async",
+    "vue",
+    "component"
+  ],
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "hailx",
+  "license": "ISC"
+}
