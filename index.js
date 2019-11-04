@@ -1,6 +1,6 @@
 const STRATEGY_MAP = {
     'async': function (callback) {
-        setTimeout(() => callback())
+        setTimeout(() => callback(), 300)
     },
     'viewport': function (callback) {
         const windowHeight = window.innerHeight
