@@ -1,6 +1,6 @@
 {
   "name": "lower-component",
-  "version": "1.0.0",
+  "version": "1.1.1",
   "description": "delayed rendering of your components",
   "keywords": [
     "async",
