@@ -4,16 +4,20 @@ const STRATEGY_MAP = {
     },
     'viewport': function (callback) {
         const windowHeight = window.innerHeight
-        this.timer = setInterval(() => {
+        const check = () => {
             const { top } = this.$refs['lowerComponent'].getBoundingClientRect()
             if (windowHeight + 30 >= top) {
                 callback()
-                clearInterval(this.timer)
+                clearTimeout(this.timer)
             }
-            this.$once('hook:beforeDestory', () => {
-                clearInterval(this.timer)
-            })
-        }, 100)
+            this.timer = setTimeout(() => {
+                check()
+            }, 100)
+        }
+        check()
+        this.$once('hook:beforeDestroy', () => {
+            clearTimeout(this.timer)
+        })
     }
 }
 export default {
